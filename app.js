@@ -51,7 +51,7 @@ async function renderSeatsGrid(movieName) {
 function renderSeats(data) {
      if(booker.firstElementChild.tagName !== "H3"){
           seatsSelected = [];
-          booker.innerHTML = `<h3 class="v-none">Seat Selector</h3>
+          booker.innerHTML = `<h2 class="v-none">Seat Selector</h2>
                               <div id="booker-grid-holder"></div>
                               <button id="book-ticket-btn" class="v-none">Book my seats</button>`;
      }

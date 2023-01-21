@@ -3,27 +3,68 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.container{
+    background-color: rgb(214, 211, 207);
+    max-height: 100%;
+}
+#contain{
+    height: 500px;
+    background-color: rgb(210, 190, 190);
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 16px;
-    color: #ffffff;
-    background-color: blue;
+    color: #29224e;
+    background-color: rgb(197,170,106);
+    margin: 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    height: 80px;
+    height: 80px;
 }
 
 .logo{
     flex: 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 30px;
+    max-width: 120px;
+    text-align: center;
+    height: 30px;
+    background-color: bisque;
+    padding-top: 3px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 nav ul{
     flex: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:flex-end;
+    
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: inherit;
 }
 
 nav ul li{
     list-style-type: none;
+    cursor: pointer;
+    margin-right: 15px;
+    text-decoration: underline;
+    color: rgb(136, 95, 103);
+}
+nav ul li:hover{
+    color: rgb(44, 52, 44);
+    background-color: rgb(176, 127, 127);
+    transition: .4s;
 }
 main{
     padding: 1rem;
@@ -67,6 +108,24 @@ main{
     background-size: cover;
     width: auto;
     height: 250px;
+    border-radius: 5px;
+    box-shadow: gray 0px 3px 6px, grey 0px 3px 6px;
+}
+.movie-img-wrapper:hover{
+    box-shadow: rgba(6, 110, 76, 0.952) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: .4s;
+}
+h4{
+    margin-top: 10px;
+    color: rgb(2, 168, 171);
+    text-align: center;
+}
+h4:hover{
+    text-shadow: 2px 3px 3px grey;
+    transition: .5s;
+}
+a{
+    text-decoration: none;
 }
 #booker{
     display: flex;
@@ -74,11 +133,34 @@ main{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin-top: 20px;
 }
 #booker-grid-holder{
     display: grid;
     grid-template-columns: repeat(2, 200px);
     gap: 2rem;
+}
+h2{
+    background-color: #FFFFE8;
+    color: #873b3b;
+    width: 130px;
+    height: 25px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 1.2rem;
+}
+h3{
+    margin-top: 10px;
+    background-color: #b4b485;
+    color: #45674a;
+    width: 330px;
+    padding: 5px 0px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
 .booking-grid{
@@ -105,18 +187,43 @@ main{
     display: grid;
     place-content: center;
     /* background-color: pink; */
+    border-radius: 8px;
+    box-shadow: gray 0px 10px 15px -3px, gray 0px 4px 6px -2px;
+}
+.seat:hover{
+    box-shadow: #705912 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: .3s;
 }
 .available-seat{
-    background-color: green;
+    background-color: rgb(20, 88, 20);
+    cursor: pointer;
 }
 .unavailable-seat{
-    background-color: red;
+    background-color: rgb(210, 73, 73);
 }
 .select-seat{
-    border:4px outset rgb(0, 0, 0);
+    border:4px outset rgb(69, 7, 117);
+    color: rgb(96, 235, 96);
+    background: rgb(18, 100, 103);
 }
-
-
+button{
+    background-color: #4FA095;
+    color: #F6F6C9;
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    border:none;
+    margin-bottom: 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: .4s;
+}
+input{
+    /* display: none; */
+}
 .d-none{
     display: none;
 }
@@ -128,6 +235,21 @@ input, button[type="submit"]{
     width: 200px;
     height: 35px;
     padding: .5rem;
+}
+input{
+    border:none;
+    border-radius:5px ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+p{
+    width: 330px;
+    background-color:#F6F6C9;
+    text-align: center;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: #153462;
 }
 @keyframes rotate {
     from{transform: rotate(0deg);}
