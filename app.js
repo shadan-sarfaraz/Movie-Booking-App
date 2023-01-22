@@ -156,9 +156,11 @@ function renderSuccessMessage(email, phone){
 function createSuccessMessage(email, phone){
      let successElement = document.createElement("div");
      successElement.setAttribute("id", "success");
-     successElement.innerHTML = `<h3>Booking details</h3>
+     successElement.innerHTML = `<h1>Booking details</h1>
                                <p>Seats: ${seatsSelected.join(", ")}</p>
                               <p>Email: ${email}</p>
                               <p>Phone number: ${phone}</p>`;
+     // successElement.classList.add("booking-detail")
+     console.log(successElement)
      booker.appendChild(successElement);
 }
