@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 .container{
-    background-color: rgb(214, 211, 207);
+    background-color: rgb(132, 124, 115);
     max-height: 100%;
 }
 #contain{
     height: 500px;
-    background-color: rgb(210, 190, 190);
+    background-color: #bbc0c1;
     padding: 10px 10px;
     margin: 10px 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: #410043 0px 3px 8px;
     border-radius: 5px;
 }
 nav{
@@ -57,6 +57,7 @@ nav{
     padding-top: 3px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-decoration: none;
 }
 nav ul{
     flex: 1;
@@ -77,8 +78,9 @@ nav ul li{
 }
 nav ul li:hover{
     color: rgb(44, 52, 44);
-    background-color: rgb(176, 127, 127);
+    background-color: rgb(169, 144, 144);
     transition: .4s;
+    text-decoration: underline;
 }
 main{
     padding: 1rem;
