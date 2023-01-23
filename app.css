@@ -5,15 +5,20 @@
 }
 .container{
     background-color: rgb(132, 124, 115);
+    
     max-height: 100%;
 }
 #contain{
     height: 500px;
-    background-color: #bbc0c1;
     padding: 10px 10px;
     margin: 10px 10px;
     box-shadow: #410043 0px 3px 8px;
     border-radius: 5px;
+        background:
+            linear-gradient(#B9F3FC, transparent),
+            linear-gradient(to top left, #AEE2FF, transparent),
+            linear-gradient(to top right, #FEDEFF, transparent);
+        background-blend-mode: screen;
 }
 nav{
     display: flex;
