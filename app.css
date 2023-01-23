@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 .container{
-    background-color: rgb(132, 124, 115);
-    
+    /* background-color: rgb(132, 124, 115); */
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
     max-height: 100%;
 }
 #contain{
